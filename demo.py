@@ -23,7 +23,7 @@ def edge_demo(image):
     cv.imshow("Canny edge",edge_output)
     
 src = cv.imread('./source/unprocessed_picture.jpeg')
-
+cv.Mat
 cv.namedWindow('input_picture',cv.WINDOW_NORMAL)
 cv.imshow('input_picture',src)
 edge_demo(src)

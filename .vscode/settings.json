@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/thomas/tools/anaconda3/envs/cv/bin/python",
+    "python.linting.pylintPath": "/home/thomas/tools/anaconda/envs/cv/bin/pylint"
+}
