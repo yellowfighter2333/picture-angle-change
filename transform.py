@@ -11,7 +11,7 @@ def order_points(pts):
     #the bottom-right point will have the largest sum
     s = pts.sum(axis = 1)
     rect[0] = pts[np.argmin(s)]#return the index of the minimum in s
-    rect[1] = pts[np.argmax(s)]
+    rect[2] = pts[np.argmax(s)]
     #top right has the smallest difference,and the bottom has the largest diff
     diff = np.diff(pts,axis = 1)
     rect[1] = pts[np.argmin(diff)]
@@ -28,8 +28,7 @@ def four_point_transformation(image,pts):
 	# x-coordiates or the top-right and top-left x-coordinates
     widthA = np.sqrt(((br[0] - bl[0]) ** 2) + ((br[1] - bl[1]) ** 2))
     widthB = np.sqrt(((tr[0] - tl[0]) ** 2) + ((tr[1] - tl[1]) ** 2))
-    maxWidth = max(int(widthA),int(widthB))
-
+    maxWidth = max(int(widthA), int(widthB))
     # compute the height of the new image, which will be the
 	# maximum distance between the top-right and bottom-right
 	# y-coordinates or the top-left and bottom-left y-coordinates

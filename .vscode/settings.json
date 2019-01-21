@@ -1,4 +1,14 @@
 {
     "python.pythonPath": "/home/thomas/tools/anaconda3/envs/cv/bin/python",
-    "python.linting.pylintPath": "/home/thomas/tools/anaconda/envs/cv/bin/pylint"
+    "python.linting.pylintPath": "/home/thomas/tools/anaconda/envs/cv/bin/pylint",
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./__pycache__",
+        "-p",
+        "*test.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": true
 }
